@@ -9,6 +9,8 @@ Bitte pro Team einen eigenen Branch erstellen Namens "Team#Nummer"
 ![fußballplaner_skizze](https://user-images.githubusercontent.com/72075426/174805828-7dff5549-b990-4725-8e97-ca26c1d831f1.png)
 
 
+# ERD-Beispiel?
+![fußballplaner_erddiagramm](https://user-images.githubusercontent.com/72075426/174812326-d24f53f7-eaaa-4a94-9c38-bb05e2c7121a.jpg)
 
 
 
