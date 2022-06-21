@@ -1,9 +1,18 @@
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 public class Planner {
+
+    DBAccess access = new DBAccess;
+
+    private PreparedStatement preparedInsertMatchStatement = null;
+    private final static String preparedInsertMatch = "INSERT INTO students "
+            + "(heimmanschaft, aussärtsmanschaft, ebene) "
+            + "VALUES ( ? , ?, ? );";
+
     public List<Match> createMatches(List<String> teams){
         ArrayList<Match> matches = new ArrayList<>();
         while (teams.size() >= 2){
