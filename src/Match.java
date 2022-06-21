@@ -17,6 +17,30 @@ public class Match {
         return awayTeam;
     }
 
+    public void setHomeTeam(String homeTeam) {
+        this.homeTeam = homeTeam;
+    }
+
+    public void setAwayTeam(String awayTeam) {
+        this.awayTeam = awayTeam;
+    }
+
+    public int getHomeResult() {
+        return homeResult;
+    }
+
+    public void setHomeResult(int homeResult) {
+        this.homeResult = homeResult;
+    }
+
+    public int getAwayResult() {
+        return awayResult;
+    }
+
+    public void setAwayResult(int awayResult) {
+        this.awayResult = awayResult;
+    }
+
     @Override
     public String toString() {
         return "Match{" +
