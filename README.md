@@ -1,5 +1,7 @@
 # Fussballplaner
 Hier Fußballplaner für das POS-Projekt.
+
+Bitte pro Team einen eigenen Branch erstellen Namens "Team#Nummer"
 # ඞ
 ```
 ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
