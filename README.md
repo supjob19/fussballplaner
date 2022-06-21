@@ -10,7 +10,8 @@ Bitte pro Team einen eigenen Branch erstellen Namens "Team#Nummer"
 
 
 # ERD-Beispiel?
-![fußballplaner_erddiagramm](https://user-images.githubusercontent.com/72075426/174812326-d24f53f7-eaaa-4a94-9c38-bb05e2c7121a.jpg)
+
+![image](https://user-images.githubusercontent.com/91153484/174815758-e0b9849b-278b-4458-ba68-da46e1f86fe9.png)
 
 
 
