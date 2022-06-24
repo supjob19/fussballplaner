@@ -19,8 +19,6 @@ public class Tester {
         List<Match> matches = planner.createMatches(teams);
         System.out.println(matches);
 
-        InsertMatch insertMatch = new InsertMatch();
-        insertMatch.insertMatch(matches.get(0), 1, 8);
-        System.out.println(matches.get(0).toString());
+
     }
 }
