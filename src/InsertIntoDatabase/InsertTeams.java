@@ -1,4 +1,4 @@
-package at.htlkaindorf;
+package InsertIntoDatabase;
 
 
 import java.io.BufferedReader;
