@@ -9,28 +9,9 @@ import java.util.Random;
 
 public class Planner {
 
-    DBAccess access = new DBAccess;
-    Connection connection = access.getConnection;
-
-    private PreparedStatement preparedInsertMatchStatement = null;
-    private final static String preparedInsertMatch = "INSERT INTO students "
-            + "(teamone, teamtow, ebene) "
-            + "VALUES ( ? , ?, ? );";
-
-    public void addMatch(Match match) throws SQLException {
-        if(preparedInsertMatchStatement == null){
-            preparedInsertMatchStatement = connection.prepareStatement(preparedInsertMatch);
-        }
-
-        preparedInsertMatchStatement.setString(1, match.getHomeTeam());
-        preparedInsertMatchStatement.setString(2, match.getAwayTeam());
-        preparedInsertMatchStatement.setInt(3, match.getEbene());
-        preparedInsertMatchStatement.executeUpdate();
-    }
-
     ArrayList<Match> matches = new ArrayList<>();
 
-    public List<Match> createMatches(List<String> teams){
+    public ArrayList<Match> createMatches(List<String> teams){
         ArrayList<Match> matches = new ArrayList<>();
         while (teams.size() >= 2){
             Random random = new Random();
@@ -53,6 +34,9 @@ public class Planner {
             matches.add(new Match(teams.get(0), null));
         }
 
+        for(Match match : matches){
+
+        }
         return matches;
     }
 }
