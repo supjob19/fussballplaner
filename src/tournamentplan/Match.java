@@ -1,3 +1,5 @@
+package tournamentplan;
+
 public class Match {
     private String homeTeam;
     private String awayTeam;
@@ -46,6 +48,8 @@ public class Match {
         return "Match{" +
                 "homeTeam='" + homeTeam + '\'' +
                 ", awayTeam='" + awayTeam + '\'' +
+                ", homeResult=" + homeResult +
+                ", awayResult=" + awayResult +
                 '}';
     }
 }

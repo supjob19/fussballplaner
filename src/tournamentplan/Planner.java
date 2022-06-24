@@ -1,7 +1,10 @@
+package tournamentplan;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+
 
 public class Planner {
     public List<Match> createMatches(List<String> teams){
