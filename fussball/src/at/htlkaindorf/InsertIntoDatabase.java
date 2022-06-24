@@ -134,6 +134,43 @@ public class InsertIntoDatabase {
         }
         return result;
     }
+
+    //todo Functions überarbeiten wenn Klassen Goal und Match im Projekt sind
+    /*
+    public List<Goal> getGoals() throws SQLException {
+        List<Goal> result = new ArrayList<>();
+
+        Statement statement = connection.createStatement();
+
+        String sqlString = "SELECT * FROM teams";
+
+        ResultSet resultSet = statement.executeQuery(sqlString);
+        while (resultSet.next()) {
+            String playername = resultSet.getString("playername");
+            int pid = resultSet.getInt("pid");
+            String teamname = resultSet.getString("teamname");
+            result.add(new Player(teamname, playername, pid));
+        }
+        return result;
+    }
+
+    public List<Match> getMatches() throws SQLException {
+        List<Player> result = new ArrayList<>();
+
+        Statement statement = connection.createStatement();
+
+        String sqlString = "SELECT * FROM teams";
+
+        ResultSet resultSet = statement.executeQuery(sqlString);
+        while (resultSet.next()) {
+            String playername = resultSet.getString("playername");
+            int pid = resultSet.getInt("pid");
+            String teamname = resultSet.getString("teamname");
+            result.add(new Player(teamname, playername, pid));
+        }
+        return result;
+    }
+    */
     public boolean insertMatchgame(Match match){
         InsertMatchgame im = new InsertMatchgame();
         return im.insertMatch(connection, match);
