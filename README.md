@@ -11,7 +11,7 @@ Bitte pro Team einen eigenen Branch erstellen Namens "Team#Nummer"
 
 # ERD-Beispiel?
 
-![image](https://user-images.githubusercontent.com/91153484/174820335-39baf119-7124-4b50-8caa-155cf62c8af2.png)
+![image](https://user-images.githubusercontent.com/91153484/175480493-77e8044e-2b92-49f8-aaba-1ed638567105.png)
 
 
 
