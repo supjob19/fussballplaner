@@ -11,12 +11,18 @@ public class Goal {
     private int pid;
     private int mid;
     private int minute;
-
-    public Goal(int gid, int pid, int mid, int minute) {
+    private Team treffendesTeam;
+    
+    public Goal(int gid, int pid, int mid, int minute, Team treffendesTeam) {
         this.gid = gid;
         this.pid = pid;
         this.mid = mid;
         this.minute = minute;
+        this.treffendesTeam = treffendesTeam;
+    }
+    
+    public String getTreffendesTeamName() {
+        return treffendesTeam.getTeamName();
     }
 
     public int getGid() {
