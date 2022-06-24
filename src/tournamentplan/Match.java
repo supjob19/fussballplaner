@@ -5,6 +5,11 @@ public class Match {
     private String awayTeam;
     private int homeResult;
     private int awayResult;
+    private int ebene
+
+    public int getEbene() {
+        return ebene;
+    }
 
     public Match(String homeTeam, String awayTeam) {
         this.homeTeam = homeTeam;
