@@ -1,4 +1,6 @@
-package at.htlkaindorf;
+package InsertIntoDatabase;
+
+import Results.Goal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
