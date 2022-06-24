@@ -1,12 +1,35 @@
+package tournamentplan;
+
 public class Match {
     private String homeTeam;
     private String awayTeam;
     private int homeResult;
     private int awayResult;
+    private int tournamentHeight;
 
     public Match(String homeTeam, String awayTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
+    }
+
+    public int getTournamentHeight() {
+        return tournamentHeight;
+    }
+
+    public int getHomeResult() {
+        return homeResult;
+    }
+
+    public void setHomeResult(int homeResult) {
+        this.homeResult = homeResult;
+    }
+
+    public int getAwayResult() {
+        return awayResult;
+    }
+
+    public void setAwayResult(int awayResult) {
+        this.awayResult = awayResult;
     }
 
     public String getHomeTeam() {
@@ -19,7 +42,7 @@ public class Match {
 
     @Override
     public String toString() {
-        return "Match{" +
+        return "tournamentplan.Match{" +
                 "homeTeam='" + homeTeam + '\'' +
                 ", awayTeam='" + awayTeam + '\'' +
                 '}';
