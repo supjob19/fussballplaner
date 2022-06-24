@@ -1,5 +1,7 @@
 package at.htlkaindorf;
 
+import tournamentplan.Match;
+
 import java.io.*;
 import java.sql.*;
 import java.time.LocalDate;
@@ -171,6 +173,11 @@ public class InsertIntoDatabase {
         return result;
     }
     */
+    public boolean insertGoal(Goal goal){
+        InsertGoal ig = new InsertGoal();
+        return ig.addGoal(connection, goal);
+    }
+
     public boolean insertMatchgame(Match match){
         InsertMatchgame im = new InsertMatchgame();
         return im.insertMatch(connection, match);
