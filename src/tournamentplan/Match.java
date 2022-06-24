@@ -5,6 +5,7 @@ public class Match {
     private String awayTeam;
     private int homeResult;
     private int awayResult;
+    private int ebene;
 
     public Match(String homeTeam, String awayTeam) {
         this.homeTeam = homeTeam;
@@ -41,6 +42,14 @@ public class Match {
 
     public void setAwayResult(int awayResult) {
         this.awayResult = awayResult;
+    }
+
+    public int getEbene() {
+        return ebene;
+    }
+
+    public void setEbene(int ebene) {
+        this.ebene = ebene;
     }
 
     @Override
