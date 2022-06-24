@@ -35,7 +35,7 @@ public class Planner {
         }
 
         for(Match match : matches){
-
+            //Connection.addMatch(match);
         }
         return matches;
     }
