@@ -1,3 +1,5 @@
+package tournamentplan;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +10,7 @@ public class Tester {
         teams.add("Barca");
         teams.add("Real Madrid");
         teams.add("Atletico Madrid");
+        teams.add("Juventus");
         teams.add("Juventus");
         Planner planner = new Planner();
         List<Match> matches = planner.createMatches(teams);

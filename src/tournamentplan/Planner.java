@@ -1,4 +1,7 @@
+package tournamentplan;
+
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,6 +15,17 @@ public class Planner {
     private final static String preparedInsertMatch = "INSERT INTO students "
             + "(heimmanschaft, aussärtsmanschaft, ebene) "
             + "VALUES ( ? , ?, ? );";
+
+    public void addMatch(Match match) throws SQLException {
+        if(preparedInsertMatchStatement == null){
+            preparedInsertMatchStatement = connection.prepareStatement(preparedInsertMatch);
+        }
+
+        preparedInsertMatchStatement.setString(1, match.getHomeTeam());
+        preparedInsertMatchStatement.setString(2, match.getAwayTeam());
+        preparedInsertMatchStatement.setString(3, match.get());
+        preparedInsertMatchStatement.executeUpdate();
+    }
 
     public List<Match> createMatches(List<String> teams){
         ArrayList<Match> matches = new ArrayList<>();
