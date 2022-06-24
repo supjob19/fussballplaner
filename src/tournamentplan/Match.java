@@ -16,6 +16,22 @@ public class Match {
         return tournamentHeight;
     }
 
+    public String getHomeTeam() {
+        return homeTeam;
+    }
+
+    public String getAwayTeam() {
+        return awayTeam;
+    }
+
+    public void setHomeTeam(String homeTeam) {
+        this.homeTeam = homeTeam;
+    }
+
+    public void setAwayTeam(String awayTeam) {
+        this.awayTeam = awayTeam;
+    }
+
     public int getHomeResult() {
         return homeResult;
     }
@@ -30,14 +46,6 @@ public class Match {
 
     public void setAwayResult(int awayResult) {
         this.awayResult = awayResult;
-    }
-
-    public String getHomeTeam() {
-        return homeTeam;
-    }
-
-    public String getAwayTeam() {
-        return awayTeam;
     }
 
     @Override
